@@ -8,9 +8,9 @@ export const TheRoutes = () => {
       <Routes>
         <Route path="/" element={<Navigate to="/search" />} />
         <Route path="/search" element={<Results />} />
-        <Route path="/images" element={<Results />} />
+        <Route path="/image" element={<Results />} />
         <Route path="/news" element={<Results />} />
-        <Route path="/videos" element={<Results />} />
+        <Route path="/video" element={<Results />} />
       </Routes>
     </div>
   );
