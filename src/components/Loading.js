@@ -7,10 +7,11 @@ export const Loading = () => {
     <div className="flex justify-center items-center">
       <BarLoader
         text={"Loading..."}
-        bgColor={"wheat"}
+        bgColor={"lightblue"}
         center={false}
         width={"150px"}
         height={"150px"}
+        className="dark:text-black"
       />
     </div>
   );
