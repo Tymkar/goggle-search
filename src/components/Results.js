@@ -87,13 +87,14 @@ export const Results = () => {
         <div className="flex flex-wrap">
           {results.map((video, index) => (
             <div key={index} className="p-2">
-              {console.log(video.additional_links)}
-              <ReactPlayer
-                url={video.additional_links?.[0].href}
-                controls
-                width="355px"
-                height="200px"
-              />
+              {video?.additional_links?.[0]?.href && (
+                <ReactPlayer
+                  url={video.additional_links?.[0].href}
+                  controls
+                  width="355px"
+                  height="200px"
+                />
+              )}
             </div>
           ))}
         </div>
