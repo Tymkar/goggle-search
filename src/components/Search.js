@@ -24,13 +24,13 @@ export const Search = () => {
         placeholder="Search"
         onChange={(e) => setText(e.target.value)}
       />
-      {!text && (
+      {text && (
         <button
           type="button"
-          className="absolue top-1.5 right-4 text-2xl text-gray-500"
+          className="absolue top-1.5 right-4 text-gray-500 ml-1 text-lg"
           onClick={() => setText("")}
         >
-          X
+          ❌
         </button>
       )}
       <Links />
